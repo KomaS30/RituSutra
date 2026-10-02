@@ -10,9 +10,14 @@ html {
 
 body {
   margin: 0;
-  font-family: "Inter", "Segoe UI", Arial, sans-serif;
-  background: #f7fbf3;
-  color: #173f2a;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: #f7faf3;
 }
 
 button,

@@ -1,74 +1,53 @@
-import { ArrowRight, Leaf, MapPin } from "lucide-react";
+import React from "react";
 
 function Hero() {
   return (
-    <section className="hero" id="home">
-      <div className="hero-container">
+    <section id="home" className="hero">
 
-        {/* Left Content */}
-        <div className="hero-content">
+      <div className="hero-overlay"></div>
 
-          <div className="hero-badge">
-            <Leaf size={16} />
-            Ayurvedic Wellness • Personalized
-          </div>
+      <div className="hero-content">
 
-          <h1>
-            Live in Harmony
-            <span> With Every Season</span>
-          </h1>
+        <p className="hero-tag">
+          🌿 AYURVEDA • SEASONS • WELLNESS
+        </p>
 
-          <p>
-            Discover personalized Ayurvedic guidance based on your
-            Prakriti, the current season, and your local weather.
-          </p>
+        <h1>
+          Live in Harmony
+          <br />
+          With Every Season
+        </h1>
 
-          <div className="hero-buttons">
+        <p className="hero-description">
+          Discover personalized Ayurvedic guidance for your diet,
+          lifestyle and daily wellness based on your Prakriti,
+          current season and local weather.
+        </p>
 
-            <button className="primary-button">
-              Discover Your Prakriti
-              <ArrowRight size={18} />
-            </button>
+        <div className="hero-buttons">
 
-            <button className="secondary-button">
-              <MapPin size={18} />
-              Explore Wellness
-            </button>
+          <a href="#seasons" className="primary-btn">
+            Discover Your Prakriti →
+          </a>
 
-          </div>
-
-          <div className="hero-info">
-            <span>🌿 Seasonal Ayurveda</span>
-            <span>•</span>
-            <span>☀️ Weather Based</span>
-            <span>•</span>
-            <span>🥗 Personalized Diet</span>
-          </div>
+          <a href="#diet" className="secondary-btn">
+            Explore Wellness
+          </a>
 
         </div>
 
-        {/* Right Image */}
-        <div className="hero-image-wrapper">
+        <div className="hero-features">
 
-          <div className="hero-image">
-            <img
-              src="/hero-ayurveda.jpg"
-              alt="Ayurvedic wellness"
-            />
-          </div>
+          <span>🌿 Seasonal Ayurveda</span>
 
-          <div className="floating-card">
-            <span className="weather-icon">☀️</span>
+          <span>☀️ Weather Based</span>
 
-            <div>
-              <small>Today's Wellness</small>
-              <strong>Balance & Harmony</strong>
-            </div>
-          </div>
+          <span>🥗 Personalized Diet</span>
 
         </div>
 
       </div>
+
     </section>
   );
 }
